@@ -1,95 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport", content="width=device-width initial-scale=1">
-        <title>Mac Rolins| projects</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Featured projects by Mac Rolins — web apps, data dashboards, and full-stack solutions.">
+    <title>Mac Rolins | Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
+    <div class="bg-grid"></div>
+
     <div id="navbar"></div>
+    <script>
+        fetch("assets/navbar.html").then(r => r.text()).then(d => document.getElementById("navbar").innerHTML = d);
+    </script>
 
-<script>
-  fetch("assets/navbar.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("navbar").innerHTML = data);
-</script>
+    <section class="section" style="padding-top:8rem;">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="section-title fade-up">Featured Projects</h1>
+                <p class="section-subtitle fade-up fade-up-delay-1">A selection of things I've built and shipped</p>
+            </div>
 
-    <section class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center fw-bold mb-5">Featured Projects</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 fade-up fade-up-delay-1">
+                    <div class="glass-card h-100">
+                        <span class="card-tag">Web Development</span>
+                        <h3 class="card-title">Landing Page Website</h3>
+                        <p class="card-desc">A clean and responsive landing page built with modern design principles and
+                            smooth interactions.</p>
+                        <div class="card-techs">
+                            <span class="card-tech">HTML</span>
+                            <span class="card-tech">CSS</span>
+                            <span class="card-tech">Bootstrap</span>
+                        </div>
+                        <a href="https://mcrolins.github.io/landing-page/" target="_blank" class="card-link">View
+                            Project →</a>
+                    </div>
+                </div>
 
-        <div class="row g-4">
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 fade-up fade-up-delay-2">
+                    <div class="glass-card h-100">
+                        <span class="card-tag">Data Science</span>
+                        <h3 class="card-title">Healthcare Data Analysis</h3>
+                        <p class="card-desc">Comprehensive analysis of a health-related survey dataset covering
+                            demographics, healthcare access, insurance status, and preventive health behaviors.</p>
+                        <div class="card-techs">
+                            <span class="card-tech">Python</span>
+                            <span class="card-tech">Pandas</span>
+                            <span class="card-tech">Matplotlib</span>
+                        </div>
+                        <a href="https://github.com/mcrolins/Health-care-data-analysis" target="_blank"
+                            class="card-link">View Project →</a>
+                    </div>
+                </div>
 
-            <!-- Project 1 -->
-            <div class="col-md-4">
-                <div class="card shadow-sm border-0">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Landing Page Website</h5>
-                        <p class="card-text text-secondary">
-                            A clean and responsive landing page built with HTML, CSS, and Bootstrap.
-                        </p>
-                        <a href="https://mcrolins.github.io/landing-page/" class="btn btn-dark" target="_blank">View Project</a>
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 fade-up fade-up-delay-3">
+                    <div class="glass-card h-100">
+                        <span class="card-tag">Data Analytics</span>
+                        <h3 class="card-title">Sales Analytics Dashboard</h3>
+                        <p class="card-desc">Actionable insights into product performance, seasonal sales patterns, and
+                            customer purchase behavior for business optimization.</p>
+                        <div class="card-techs">
+                            <span class="card-tech">Python</span>
+                            <span class="card-tech">Power BI</span>
+                            <span class="card-tech">SQL</span>
+                        </div>
+                        <a href="https://mcrolins.github.io/presentation/" target="_blank" class="card-link">View
+                            Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4 fade-up fade-up-delay-4">
+                    <div class="glass-card h-100">
+                        <span class="card-tag">Full-Stack</span>
+                        <h3 class="card-title">Laundry Management System</h3>
+                        <p class="card-desc">Responsive frontend for a laundry management system with role-based
+                            sections for employees, customers, and admin. Features password validation and form
+                            handling.</p>
+                        <div class="card-techs">
+                            <span class="card-tech">HTML</span>
+                            <span class="card-tech">CSS</span>
+                            <span class="card-tech">JavaScript</span>
+                        </div>
+                        <a href="https://mcrolins.github.io/egerton_laundry/" target="_blank" class="card-link">View
+                            Project →</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Project 2 -->
-            <div class="col-md-4">
-                <div class="card shadow-sm border-0">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Data Analysis Dashboard</h5>
-                        <p class="card-text text-secondary">
-                            A comprehensive analysis of a health-related survey dataset. The data includes information about individuals' demographics, healthcare access, insurance status, hospital visits, and preventive health behaviors like routine check-ups and cancer screenings.
-                        </p>
-                        <a href="https://github.com/mcrolins/Health-care-data-analysis" class="btn btn-dark">View Project</a>
-                    </div>
-                </div>
-            </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Mac Rolins. Crafted with passion.</p>
+        </div>
+    </footer>
 
-            <!-- Project 3 -->
-            <div class="col-md-4">
-                <div class="card shadow-sm border-0">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Data Analysis Dashboard</h5>
-                        <p class="card-text text-secondary">
-                            This analysis provides actionable insights into product performance, seasonal sales patterns, and customer purchase behavior.
--It can support business decisions related to marketing, inventory planning, and revenue optimization.
-
-                        </p>
-                        <a href="https://mcrolins.github.io/presentation/" class="btn btn-dark">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="col-md-4">
-                <div class="card shadow-sm border-0">
-                    
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Laundry Management system frontend</h5>
-                        <p class="card-text text-secondary">
-                            A responsive frontend for a laundry management system built with HTML, CSS, and JavaScript. Has three sections for employees,customers and admin.
-                            Password validation and form handling implemented using JavaScript, any name and password checks so long as they meet the required criteria. 
-
-                        </p>
-                        <a href="https://mcrolins.github.io/egerton_laundry/" class="btn btn-dark">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-        </div> <!-- end row -->
-    
-    </div> <!-- end container -->
-</section>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>

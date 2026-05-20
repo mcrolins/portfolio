@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research publications and academic work by Mac Rolins.">
+  <title>Mac Rolins | Publications</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="bg-grid"></div>
+
+  <div id="navbar"></div>
+  <script>
+    fetch("assets/navbar.html").then(r => r.text()).then(d => document.getElementById("navbar").innerHTML = d);
+  </script>
+
+  <section class="section" style="padding-top:8rem;">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="section-title fade-up">Publications & Research</h1>
+        <p class="section-subtitle fade-up fade-up-delay-1">Papers, analyses, and academic contributions</p>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Publication 1 -->
+        <div class="col-md-6 col-lg-4 fade-up fade-up-delay-1">
+          <div class="glass-card pub-card h-100">
+            <span class="card-tag">Research Paper</span>
+            <h3 class="card-title">Concurrency Control and Data Consistency in Distributed Web Apps</h3>
+            <p class="card-desc">This repository contains the seminar paper investigating the mechanisms of concurrency
+              control and the spectrum of data consistency models in modern distributed systems. As web architectures
+              transition from monoliths to globally distributed networks, maintaining data integrity without
+              compromising performance or availability has become a fundamental engineering challenge.
+              This research evaluates the shift from rigid ACID constraints to basically available (BASE) models,
+              analyzing the theoretical limits, algorithmic protocols, and architectural trade-offs required to build
+              resilient, high-performance web applications.
+            </p>
+            <div class="card-techs">
+              <span class="card-tech">Theoritical Foundations</span>
+              <span class="card-tech">Concurrency control protocols</span>
+              <span class="card-tech">Real world arhitectural case studies</span>
+            </div>
+            <a href="https://github.com/mcrolins/Concurrency-Control-and-Data-Consistency-in-Distributed-Web-Apps"
+              target="_blank" class="card-link">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Publication 2 -->
+        <div class="col-md-6 col-lg-4 fade-up fade-up-delay-2">
+          <div class="glass-card pub-card h-100">
+            <span class="card-tag">Case Study</span>
+            <h3 class="card-title">E-Commerce Sales Optimization</h3>
+            <p class="card-desc">Comprehensive study of seasonal patterns, product performance metrics, and customer
+              behavior analysis for revenue optimization strategies.</p>
+            <div class="card-techs">
+              <span class="card-tech">Business Analytics</span>
+              <span class="card-tech">Power BI</span>
+              <span class="card-tech">SQL</span>
+            </div>
+            <a href="https://mcrolins.github.io/presentation/" target="_blank" class="card-link">Read More →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Mac Rolins. Crafted with passion.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
